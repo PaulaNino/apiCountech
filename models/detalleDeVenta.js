@@ -39,16 +39,18 @@ const DetalleDeVentaSchema = Schema({
         required: [true, 'La referencia es necesaria']
     },
     proceso:{
-        type: Number,
-        required: [true, 'El proceso es necesario']              
+        type: String,
+        required: [true, 'El proceso es necesario'],
+        enum: ['Fileteadora', 'Plana', 'Recubridora']            
     },
     color: {
-        type: Number,
+        type: String,
         required: [true, 'El color es necesario']   
     },
     talla: {
-        type: Number,
-        required: [true, 'La talla es necesaria']   
+        type: String,
+        required: [true, 'La talla es necesaria'],
+        enum: ['S', 'M', 'L'] 
     }
 
 
