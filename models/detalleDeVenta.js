@@ -23,10 +23,6 @@ const DetalleDeVentaSchema = Schema({
         type: Date,
         required: [true, 'La fecha de la orden de trabajo es necesaria']
     },
-    fechaRegistro: {//Fecha registro orden de trabajo
-        type: Date,
-        required: [true, 'La fecha de registro es necesaria']
-    },
     fechaEntregaOrden: {
         type: Date,
         required: [true, 'La fecha de entrega de orden es necesaria']
